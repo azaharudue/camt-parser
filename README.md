@@ -1,15 +1,8 @@
-# CAMT053Parser for Java
-CAMT053Parser - a CAMT.053 XML format based bank statement parser for Java
+# camt-parser for Java
+camt-parser - a CAMT.xxx XML format based bank statement parser for Java
 
-The CAMT053 parser supports [camt.053.001.02](http://www.iso20022.org/message_archive.page#Bank2CustomerCashManagement) and will
-read a CAMT.053 XML formatted input stream and returns a document model holding the bank statement.
-
-The test folder contains an example [importCamt053.java](/src/test/java/importCamt053.java) on how to read the XML file and
-print entries (transactions) of the bank statement.
-
-The example program displays the IBAN, amount, remittance information (payment description) and name of the creditor/debtor for:
-- outgoing payments (debit)
-- incoming payments (credit)
-- batch outgoing payments (debit)
-
-More information can be retrieved from the read document, but it is recommended to read the specifications.
+The camt-parser is a clean fork of [CAMT053Parser](https://github.com/tjeerdnet/CAMT053Parser) supports
+<li> [camt.053.001.02](http://www.iso20022.org/message_archive.page#Bank2CustomerCashManagement) </li>
+<li> [camt.052.001.02](http://www.iso20022.org/message_archive.page#Bank2CustomerCashManagement) </li>
+  and will
+read a CAMT.xx XML formatted input stream and returns a document model holding the bank statement/report.
